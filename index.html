@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-   <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<head>
     <title>Sunset Lodge</title>
 </head>
 
 
-<body style="background-color: aqua;"
+<body style="background-color: rgb(91, 154, 154);">    
+    
 
-<i class="fa-brands fa-x-twitter"></i>
     <header>      
         <h1>Sunset Lodge</h1>
+
+        <!-- nav links and bar-->
     
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" style="align-items: end; color: blue; border-radius: 0ch;">
             <li class="Home">
                 <a class="nav-link" href="#Home">Home</a>
             </li>
@@ -34,10 +36,75 @@
     </nav>
 </header>
 
-     <p>Welcome to the Sunset Lodge, a cozy and stylish lodge located in the heart of the city. Our spacious bedrooms and breathtaking views make it an ideal choice for those seeking a tranquil respite from the world.</p>
+
+
     
+
+
+    <style>
+        /* Custom CSS for the hero section */
+        .hero-section {
+            background-image: url(Images/Forest.jpg); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content .card {
+            background: rgba(255, 255, 255, 0.8); 
+            color: #000; 
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="display-4">Welcome to Sunset Lodge</h1>
+            <p class="lead">Discover amazing cuisines and destinations with us at Sunset Lodge.</p>
+            <!-- CTA Button -->
+            <a href="#" class="btn btn-primary btn-lg mb-3">Book Now</a>
+            <!-- Card -->
+            <div class="card">
+                <div class="card-body">
+                    
+                    <p class="card-text">Sign up today to get maximum fun at an affordable price.</p>
+                    <a href="#" class="btn btn-success">Sign Up Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+   
+     
     <h2><Menu></h2>
-    <div class="Container"> 
+    <div class="Container-Food" style="border: 0cm;"> 
         <div class="row"> 
          <div class="col-4">Food</div>
          <div class="col-4">Price</div>
@@ -127,12 +194,12 @@
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="Nmae" class="form-label">Name</label>
+                  <label for="Name" class="form-label">Name</label>
                   <input type="Name" class="form-control" id="Name">
                 </div>
                 <div class="Message">  
-                  <label for="Message" class="form-label">Message</label>
-                  <input type="email" class="form-control" id="Message" aria-describedby="emailHelp">
+                  <label for="Messgae" class="form-label">Message</label>
+                  <input type="text area" class="form-control" id="Message" aria-rowspan="10">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
@@ -140,13 +207,43 @@
     </div>
     </div>
 
+    <!-- Footer Section -->
+
+
 <footer>
     <p>&copy; 2023 Sunset Lodge. All rights reserved.</p>
-    <p><a href="#Home">Home</a></p>
-    <p><a href="#Menu">Menu</a></p>
-    <p><a href="#Contact">Contact Us</a></p>
-    <p><a href="#About">About Us</a></p>
-    <i class="fa-brands fa-x-twitter">fa-x-twitter</i>
+    <p><a href="#">Home</a></p>
+    <p><a href="#">Menu</a></p>
+    <p><a href="#">Contact Us</a></p>
+    <p><a href="#">About Us</a></p>
+
+   
+        
+   
+    <!-- Social Media Icons Section -->
+    <div class="text-center py-5 bg-light">
+        <h2>Follow Us on Social Media</h2>
+        <div class="social-icons mt-3">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="text-primary">
+                <i class="bi bi-facebook fs-3"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com" target="_blank" class="text-info">
+                <i class="bi bi-twitter fs-3"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="text-danger">
+                <i class="bi bi-instagram fs-3"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="text-primary">
+                <i class="bi bi-linkedin fs-3"></i>
+            </a>
+        </div>
+    </div>
+
+   
 </footer>
     
 
